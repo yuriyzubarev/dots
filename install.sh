@@ -2,9 +2,9 @@
 
 DOTS="$HOME/.dots"
 
-test -w $HOME/.bash_profile &&
-  cp $HOME/.bash_profile $HOME/.bash_profile.bak
+test -w ~/.bash_profile &&
+  cp ~/.bash_profile ~/.bash_profile.bak
 
-cp $DOTS/bash_profile.template $HOME/.bash_profile
+ln -s $DOTS/bash_profile.template ~/.bash_profile
 
 
